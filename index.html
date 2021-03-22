@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var prviBroj = parseInt(prompt("Unesite prvi broj"));
+      var operacija = prompt("Unesite operaciju");
+      var drugiBroj = parseInt(prompt("Unesite drugu cifru"));
+
+      switch (operacija) {
+        case "+":
+          function rezultatSabiranje() {
+            return prviBroj + drugiBroj;
+          }
+          alert("Vas rezultat je " + rezultatSabiranje());
+          break;
+        case "-":
+          function rezultatOduzimanje() {
+            return prviBroj - drugiBroj;
+          }
+          alert("Vas rezultat je " + rezultatOduzimanje());
+          break;
+        case "*":
+          function rezultatMnozenje() {
+            return prviBroj * drugiBroj;
+          }
+          alert("Vas rezultat je " + rezultatMnozenje());
+          break;
+        case "/":
+          function rezultatDijeljenje() {
+            return prviBroj / drugiBroj;
+          }
+          alert("Vas rezultat je " + rezultatDijeljenje());
+          break;
+        default:
+          alert("Nepravilna operacija");
+          break;
+      }
+    </script>
+  </body>
+</html>
